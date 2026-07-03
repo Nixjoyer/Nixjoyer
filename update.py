@@ -482,7 +482,7 @@ def make_quote_svg(quote, author):
     # Closing " appended to final tspan
     tspans = tspans.rstrip()
     # add closing quote entity to last tspan inline
-    last_open = tspans.rfind("<tspan")
+    tspans.rfind("<tspan")
     last_close = tspans.rfind("</tspan>")
     tspans = tspans[:last_close] + "&#x201D;" + tspans[last_close:]
 
